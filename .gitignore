@@ -1,0 +1,12 @@
+*.rpyc
+*.rpa
+
+*python-packages/
+*cache/
+
+poems.rpy
+poems_special.rpy
+firstrun
+glitchtext.rpy
+credits.rpy
+effects.rpy
