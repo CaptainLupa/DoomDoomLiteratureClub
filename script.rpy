@@ -27,7 +27,6 @@ label start:
     $ config.allow_skipping = True
 
     #call Doom
-    #call Texas_Game_Fix("Monika", "Yuri")
     call OverlordTest
 
 label endgame(pause_length=4.0):

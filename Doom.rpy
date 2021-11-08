@@ -104,8 +104,7 @@ label Doom:
     scene bg sayori_bedroom
     show s_kill as s_kill zorder 2 at s_kill_mid
     stop music
-    text "Revive?" style "texasgame_text" xpos 545 ypos 105
-    #$ ui.text("Revive?", style="texasgame_text", xpos=545, ypos=105)
+    show texasText("Revive?", 545, 105)
     menu:
         "Yes":
             jump FuckY
@@ -113,8 +112,7 @@ label Doom:
             jump FuckN
 
 label FuckN:
-    text "Wait really?" style "texasgame_text" xpos 420 ypos 105
-    #$ ui.text("Wait really?", style="texasgame_text", xpos=420, ypos=105)
+    show texasText("Wait really?", 420, 105)
     menu:
         "Yes":
             "Okay then{cps=3}...{/cps}"
@@ -204,7 +202,7 @@ label FuckY:
     call updateconsole("Oh yeah?", "Oh yeah?")
     $ pause(0.5)
     call updateconsole("And what are {i}you{/i} going to do about it?", "And what are {i}you{/i} going to do about it?")
-    d "THIS, NIGGA!!!!"
+    d "THIS, MOTHERFUCKER!!!!"
     show sayori 4m zorder 2 at t21
     show doomguy 1c zorder 3 at tr22
     call Bang
@@ -251,8 +249,9 @@ label FuckY:
     n 4u "Oh... my bad..."
     call updateconsole("Yeah", "Yeah")
     show sayori 1n zorder 2 at t31
-    show doomguy 1c zorder 3 at tr33
     show natsuki 4u zorder 2 at t32
+    pause 1.5
+    show doomguy 1c zorder 3 at tr33
     call Bang
     d "FUCK YOU!"
     call updateconsole("Dude seriously stop breaking these \nthey\'re expensive.", "Dude seriously stop breaking these \nthey\'re expensive.")
@@ -295,5 +294,5 @@ label FuckY:
     d "Aaahhhhh, Souka."
     d "IKUZO!"
     $ c_name = "Conky Crinkler"
-    jump Mango
+    call Mango
     return

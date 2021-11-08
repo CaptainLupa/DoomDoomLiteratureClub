@@ -73,10 +73,10 @@ label Mango:
     $ pause(3.5)
     show doomguy 1a zorder 3 at t44
     stop music
-    d "Ok you can stop hugging her now, {i}Yuri{/i}, you fucking Yuri."
+    d "Ok you can stop hugging her now, {i}Yuri{/i}, you fucking {i}Yuri{/i}."
     $ pause(1)
     y 3y7 "nnnnNO!"
-    d "GET OFF HER EEEEEEEEE!{p=1}{nw}"
+    d "GET OFF HER rrREEEEEEEEE!{p=1}{nw}"
     y "I WILL HUG HER FOREVER"
     d "I SAID GET OFF"
     $ pause(0.25)
@@ -106,11 +106,11 @@ label Mango:
     y "Hopefully, I don't know man."
     y "You might have to face off with her in a super ultra mega battle."
     y "But There's only about a 1 in a 100 chance of that happening."
-
-label OverlordTest:
+    pause 1.5
     $ consolehistory = []
     call updateconsole("But what if I just")
-    call updateconsole("_SuperMegaBattle = random.randint(1, 10)", """Traceback (most recent call last):
+    call updateconsole("python3", "python3")
+    call updateconsole(">>>_SuperMegaBattle = random.randint(1, 10)", """Traceback (most recent call last):
     File "main.py", line 1, in <module>
         _SuperMegaBattle = random.randint(1, 10)
     NameError: name 'random' is not defined""")
@@ -128,6 +128,7 @@ label OverlordTest:
     y "FUCKING RUNNNNNNNNNNNN"
     call updateconsole("YURI!!  I DON\'T KNOW WHERE\nYOU ARE CALM DOWN GODDAMN LADY")
     d "Calm down Yuri, I got this."
+    pause 2.0
     show doomguy 1c at tr44 zorder 4
     call Bang
     pause 0.5
@@ -141,6 +142,7 @@ label OverlordTest:
     call overlordConsole("Shut the fuck up they\n aren't supposed to\nknow I exist yet.")
     call updateconsole("sorry...")
     call hideconsole
+    
 
     return
 
