@@ -14,7 +14,7 @@ init 10 python:
         "What is the best architype of girl?": ["Tomboy", "Tsundere", "Kuudere", "Yandere"],
         "What is a girls best friend?": ["Her best friend", "Hitachi Magic Wand", "BDSM", "Femdom Yuri"],
         "Who is the sexiest\nPresidential Candidate?": ["Sernie Banders", "Tonald Drump", "Boe Jiden", "Cillary Hinton"],
-       #"What is the most attractive vacation\ndestination?": ["Auschwitz", "", "", ""],
+        #"What is the most attractive vacation\ndestination?": ["Auschwitz", "", "", ""],
         "Who is the greatest Tsundere\nof all time?": ["Asuka", "Hitagi", "Taiga", "Rin"]
     }
 

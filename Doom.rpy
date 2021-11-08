@@ -104,7 +104,8 @@ label Doom:
     scene bg sayori_bedroom
     show s_kill as s_kill zorder 2 at s_kill_mid
     stop music
-    $ ui.text("Revive?", style="texasgame_text", xpos=545, ypos=105)
+    text "Revive?" style "texasgame_text" xpos 545 ypos 105
+    #$ ui.text("Revive?", style="texasgame_text", xpos=545, ypos=105)
     menu:
         "Yes":
             jump FuckY
@@ -112,7 +113,8 @@ label Doom:
             jump FuckN
 
 label FuckN:
-    $ ui.text("Wait really?", style="texasgame_text", xpos=420, ypos=105)
+    text "Wait really?" style "texasgame_text" xpos 420 ypos 105
+    #$ ui.text("Wait really?", style="texasgame_text", xpos=420, ypos=105)
     menu:
         "Yes":
             "Okay then{cps=3}...{/cps}"

@@ -355,7 +355,7 @@ label splashscreen:
         $ persistent.oldversion = config.version
         $ renpy.save_persistent()
 
-    if not persistent.first_run_DOOM:
+    if not persistent.First_run_DOOM:
         $ restore_all_characters()
         $ quick_menu = False
         scene white

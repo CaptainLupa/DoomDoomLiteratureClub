@@ -7,8 +7,12 @@ python early:
     me = singleton.SingleInstance()
 
 init python:
-    config.keymap['game_menu'].remove('mouseup_3')
-    config.keymap['hide_windows'].append('mouseup_3')
+    import platform
+    if platform.system() == "Darwin":
+        pass
+    else:
+        config.keymap['game_menu'].remove('mouseup_3')
+        config.keymap['hide_windows'].append('mouseup_3')
     config.keymap['self_voicing'] = []
     config.keymap['clipboard_voicing'] = []
     config.keymap['toggle_skip'] = []
@@ -1355,6 +1359,8 @@ default persistent.first_load = None
 default persistent.first_poem = None
 default persistent.seen_colors_poem = None
 default persistent.monika_back = None
+default persistent.First_run_DOOM = None
+default presistent.first_run = None
 default in_sayori_kill = None
 default in_yuri_kill = None
 default anticheat = 0

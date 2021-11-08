@@ -26,7 +26,7 @@ label start:
     $ allow_skipping = True
     $ config.allow_skipping = True
 
-   # call Doom
+    #call Doom
     #call Texas_Game_Fix("Monika", "Yuri")
     call OverlordTest
 
