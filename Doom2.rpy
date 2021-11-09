@@ -1,5 +1,4 @@
-label Mango:
-    stop music
+label Doom2:
     scene bg closet
     with dissolve_scene_half
     play music t4
@@ -306,5 +305,7 @@ label Mango:
     stop music fadeout 2.0
     scene black
     with dissolve_scene_full
+
+    call Doom3
 
     return

@@ -485,13 +485,13 @@ label splashscreen:
     $ is_skyrim = False
     $ is_halo = False
     $ is_sw = False
-    if Succ >= 10 and Succ <= 15:
+    if Succ >= 10 and Succ <= 20:
         $ config.main_menu_music = audio.halo
         $ is_halo = True
-    elif Succ >= 16 and Succ <= 21:
+    elif Succ >= 21 and Succ <= 43:
         $ config.main_menu_music = audio.Skyrim
         $ is_skyrim = True
-    elif Succ >= 22 and Succ <= 27:
+    elif Succ >= 44 and Succ <= 50:
         $ config.main_menu_music = audio.sw
         $ is_sw = True
     else:

@@ -186,11 +186,11 @@ label Doom:
     menu:
         "Yes":
             hide screen texasText
-            jump FuckY
+            jump FakeIn
         "No":
-            jump FuckN
+            jump FakeOut
 
-label FuckN:
+label FakeOut:
     show screen texasText("Wait really?", 420, 105)
     menu:
         "Yes":
@@ -203,7 +203,7 @@ label FuckN:
             hide screen texasText
             jump FuckY
 
-label FuckY:
+label FakeIn:
     d "OH FUCK NO!!"
     hide s_kill_zoom
     hide s_kill
@@ -378,6 +378,6 @@ label FuckY:
     stop music fadeout 2.0
     scene black
     with dissolve_scene_full
-    call Mango
+    call Doom2
 
     return
