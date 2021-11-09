@@ -26,8 +26,10 @@ label start:
     $ allow_skipping = True
     $ config.allow_skipping = True
 
-    #call Doom
-    call OverlordTest
+    call Doom
+    #call Mango
+
+    return
 
 label endgame(pause_length=4.0):
     $ quick_menu = False

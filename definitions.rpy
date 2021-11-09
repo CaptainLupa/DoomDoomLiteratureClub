@@ -1273,7 +1273,7 @@ image natsuki 1hmm = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), 
 image natsuki 2hmm = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "mod_assets/natsukiSUS.png")
 image natsuki 3hmm = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "mod_assets/natsukiSUS.png")
 image natsuki 4hmm = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "mod_assets/natsukiSUS.png")
-image natsuki 5hmm = im.Composite((960, 960), (18, 22), "mod_assts/natsukiSUS.png", (0, 0), "natsuki/3.png")
+image natsuki 5hmm = im.Composite((960, 960), (18, 22), "mod_assets/natsukiSUS.png", (0, 0), "natsuki/3.png")
 
 image doomguy 1a = im.Composite((800, 800), (0, 0), "mod_assets/DL.png", (0, 0), "mod_assets/DR.png", (0, 0), "mod_assets/DH.png")
 image doomguy 1b = im.Composite((1332, 850), (0, 0), "mod_assets/DGAleft.png", (0, 0), "mod_assets/DGAright.png", (0, 0), "mod_assets/DGAtop.png")

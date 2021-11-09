@@ -1,3 +1,85 @@
+image exception_bg = "#dadada"
+image fake_exception = Text("An exception has occurred.", size=40, style="_default")
+image fake_exception2 = Text("File \"game/script-ch5.rpy\", line 307\nSee traceback.txt for details.", size=20, style="_default")
+
+image splash_glitch:
+    subpixel True
+    "images/bg/splash-glitch.png"
+    alpha 0.0
+    pause 0.5
+    linear 0.5 alpha 1.0
+    pause 2.5
+    linear 0.5 alpha 0.0
+    "gui/menu_bg.png"
+    topleft
+    alpha 0.0
+    parallel:
+        xoffset 0 yoffset 0
+        linear 0.25 xoffset -100 yoffset -100
+        repeat
+    parallel:
+        linear 0.5 alpha 1.0
+    parallel:
+        ypos 0
+        pause 1.0
+        easeout 1.0 ypos -500
+image splash_glitch2:
+    subpixel True
+    "gui/menu_bg.png"
+    topleft
+    block:
+        xoffset 0 yoffset 0
+        linear 0.05 xoffset -100 yoffset -100
+        repeat
+
+image splash_glitch_m:
+    subpixel True
+    "gui/menu_art_m.png"
+    zoom 0.5
+    xpos 0.5 ypos 0.5
+    pause 0.1
+    parallel:
+        xpos 0.3 ypos 1.2
+        linear 0.08 ypos 0.1
+        repeat
+    parallel:
+        pause 0.5
+        alpha 0.0
+
+image splash_glitch_n:
+    subpixel True
+    "gui/menu_art_n.png"
+    zoom 0.5
+    pause 0.2
+    xpos 0.8 ypos 0.8
+    pause 0.05
+    xpos 0.2 ypos 0.7
+    pause 0.05
+    xpos 0.4 ypos 0.2
+    pause 0.05
+    xpos 0.7 ypos 1.2
+    pause 0.05
+    xpos 0.1 ypos 1.0
+    pause 0.05
+    xpos 0.2 ypos 0.6
+    pause 0.05
+    xpos 0.9 ypos 0.4
+    pause 0.05
+    alpha 0.0
+
+image splash_glitch_y:
+    subpixel True
+    "gui/menu_art_y.png"
+    zoom 0.5
+    ypos 1.3
+    block:
+        xpos 0.85
+        pause 0.02
+        xpos 0.81
+        pause 0.02
+        repeat
+
+
 label Doom:
     stop music fadeout 2.0
     scene black
@@ -100,15 +182,16 @@ label Doom:
     scene bg sayori_bedroom
     show s_kill as s_kill zorder 2 at s_kill_mid
     stop music
-    show texasText("Revive?", 545, 105)
+    show screen texasText("Revive?", 560, 105)
     menu:
         "Yes":
+            hide screen texasText
             jump FuckY
         "No":
             jump FuckN
 
 label FuckN:
-    show texasText("Wait really?", 420, 105)
+    show screen texasText("Wait really?", 420, 105)
     menu:
         "Yes":
             "Okay then{cps=3}...{/cps}"
@@ -117,6 +200,7 @@ label FuckN:
         "No":
             "Phew..."
             "Though we lost him there for a sec."
+            hide screen texasText
             jump FuckY
 
 label FuckY:
@@ -160,7 +244,7 @@ label FuckY:
     $ consolehistory = []
     call updateconsole("Hey assholes I can hear you.", "Hey assholes I can hear you.")
     show doomguy 1a zorder 2 at t22
-    show sayroi 1j zorder 3 at t21
+    show sayori 1j zorder 3 at t21
     s "MONIKA!!!"
     call updateconsole("Sayori, do me a favor and \njust hang ur self again.", "Sayori, do me a favor and \njust hang ur self again.")
     s 5b "Uh, jeez Monika, that\'s not very nice of a thing to say to me."

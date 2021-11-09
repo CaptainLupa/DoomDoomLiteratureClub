@@ -224,8 +224,7 @@ image y_kill = ConditionSwitch(
     "persistent.yuri_kill >= 460", "images/cg/y_kill/2a.png",
     "persistent.yuri_kill >= 260", "images/cg/y_kill/1c.png",
     "persistent.yuri_kill >= 200", "images/cg/y_kill/1b.png",
-    "True", "images/cg/y_kill/1a.png",
-
+    "True", "images/cg/y_kill/1a.png"
     )
 
 transform s_kill_bg_start:
