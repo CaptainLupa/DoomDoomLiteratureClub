@@ -1,7 +1,3 @@
-label Boom:
-    call Texas_Game_Fix
-
-    
 label Doom:
     stop music fadeout 2.0
     scene black
@@ -273,6 +269,7 @@ label FuckY:
     s 3o "Wait, who is saying that Monika is a master at Texas Street Law?"
     n "Why of course that would be Yuri!"
     n "She is the head boss of the UTSLG."
+    d "the what?{nw}"
     n "Her goons can take on anyone Monika throws at them!"
     n "But of course, Yuri can defeat even them."
     d "Well, it sounds like we need to get Yuri on our side then."
@@ -294,5 +291,9 @@ label FuckY:
     d "Aaahhhhh, Souka."
     d "IKUZO!"
     $ c_name = "Conky Crinkler"
+    stop music fadeout 2.0
+    scene black
+    with dissolve_scene_full
     call Mango
+
     return
