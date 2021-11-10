@@ -369,6 +369,7 @@ label splashscreen:
         "Also make sure you have sound on!"
         $ persistent.First_run_DOOM = True
         $ persistent.first_run = True
+        $ persistent.guarentee_doom = True
         scene tos2
         with Dissolve(1.5)
         pause 1.0
@@ -481,7 +482,11 @@ label splashscreen:
 
     show white
     $ persistent.ghost_menu = False
-    $ Succ = renpy.random.randint(1, 100)
+    if persistent.guarentee_doom:
+        $ Succ = 100
+        $ persistent.guarentee_doom = False
+    else:
+        $ Succ = renpy.random.randint(1, 100)
     $ is_skyrim = False
     $ is_halo = False
     $ is_sw = False

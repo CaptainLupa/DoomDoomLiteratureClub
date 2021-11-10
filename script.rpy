@@ -26,7 +26,7 @@ label start:
     $ allow_skipping = True
     $ config.allow_skipping = True
 
-    call Doom
+    call steveTest
     #call Mango
 
     return

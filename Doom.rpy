@@ -98,7 +98,7 @@ label Doom:
     play music td
     show s_kill_bg2
     show s_kill2
-    show death as death zorder 100 at d_mid
+    show death zorder 100 at d_mid
     show s_kill_bg as s_kill_bg at s_kill_bg_start
     show s_kill as s_kill at s_kill_start
     $ pause(3.75)
@@ -210,7 +210,7 @@ label FakeIn:
     show doomguy 1a zorder 3 at t22
     show s_kill as s_kill zorder 2 at s_kill_out
     d "Sayori! Take this healing!"
-    show megahealth 1a zorder 3 at r21
+    show megahealth zorder 4 at r21
     show doomguy 1a zorder 2 at t22
     $ pause(1.75)
     hide megahealth
@@ -262,7 +262,7 @@ label FakeIn:
     d "NOOO!"
     d "Health GOOOOO!"
     show doomguy 1a zorder 2 at t22
-    show megahealth 1a zorder 3 at r21
+    show megahealth zorder 3 at r21
     $ pause(1.75)
     hide megahealth
     hide s_kill

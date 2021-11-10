@@ -1279,7 +1279,7 @@ image doomguy 1a = im.Composite((800, 800), (0, 0), "mod_assets/DL.png", (0, 0),
 image doomguy 1b = im.Composite((1332, 850), (0, 0), "mod_assets/DGAleft.png", (0, 0), "mod_assets/DGAright.png", (0, 0), "mod_assets/DGAtop.png")
 image doomguy 1c = im.Composite((1332, 850), (0, 0), "mod_assets/DGALleft.png", (0, 0), "mod_assets/DGALright.png", (0, 0), "mod_assets/DGALtop.png")
 image doomguy 1d = im.Composite((800, 800), (0, 0), "mod_assets/DL.png", (0, 0), "mod_assets/DR.png", (0, 0), "mod_assets/DHB.png")
-image megahealth 1a = im.Composite((627, 522), (0, 0), "mod_assets/DMHL.png", (0, 0), "mod_assets/DMHR.png", (0, 0), "mod_assets/DMHH.png")
+image megahealth = im.Composite((627, 522), (0, 0), "mod_assets/DMHL.png", (0, 0), "mod_assets/DMHR.png", (0, 0), "mod_assets/DMHH.png")
 image conkycrinkler 1a = im.Composite((1280, 720), (0, 0), "mod_assets/ccL.png", (0, 0), "mod_assets/ccR.png", (0, 0), "mod_assets/ccH.png")
 image death = "mod_assets/Death.png"
 
@@ -1334,10 +1334,9 @@ define n = DynamicCharacter('n_name', image='natsuki', what_prefix='"', what_suf
 define y = DynamicCharacter('y_name', image='yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define ny = Character('Nat & Yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define d = DynamicCharacter('d_name', image='doomguy', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
-define mh = DynamicCharacter('mh_name', image='megahealth', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define c = DynamicCharacter('c_name', image='conkycrinkler', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define a = Character('All in Unison', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
-define death = DynamicCharacter('Death_name', image='death', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define r = DynamicCharacter('r_name', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 
 define _dismiss_pause = config.developer
 
@@ -1359,7 +1358,8 @@ default persistent.first_load = None
 default persistent.first_poem = None
 default persistent.seen_colors_poem = None
 default persistent.monika_back = None
-default persistent.First_run_DOOM = None
+default persistent.First_run_DOOM = False
+default persistent.guarentee_doom = False
 default persistent.first_run = None
 default in_sayori_kill = None
 default in_yuri_kill = None
@@ -1376,8 +1376,10 @@ default m_name = "Monika"
 default n_name = "Natsuki"
 default y_name = "Yuri"
 default d_name = "Doomguy"
-default mh_name = "Megahealth"
 default c_name = "Conky Crinkler"
+default r_name = ""
+
+# Mod Persistents
 
 default n_poemappeal = [0, 0, 0]
 default s_poemappeal = [0, 0, 0]

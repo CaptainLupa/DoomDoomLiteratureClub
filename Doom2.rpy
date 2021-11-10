@@ -1,3 +1,6 @@
+image steve:
+    "mod_assets/SteveH.png"
+
 label Doom2:
     scene bg closet
     with dissolve_scene_half
@@ -147,6 +150,14 @@ label Doom2:
     call overlordConsole("Shut the fuck up they\n aren't supposed to\nknow I exist yet.")
     call updateconsole("sorry...")
     call hideconsole
+
+    return
+
+label steveTest:
+    show doomguy 1a at t44 zorder 3
+    show natsuki 1g at t43 zorder 3
+    show yuri 1g at t42 zorder 3
+    show sayori 1g at t41 zorder 3
     y 1l "Well that was... interesting..."
     d "Yeah..."
     d "Soo... Any chance I can get that tutorial on Texas Street Law."
@@ -159,7 +170,7 @@ label Doom2:
     d "Okay..."
     show natsuki 1a at i43 zorder 3
     y "So, Doomguy, ready for the Street Game sitrep?"
-    d "ready anytime you are, Yuri."
+    d "Ready anytime you are, Yuri."
     y 1b "Alright."
     y "So basically Texas Street Law is a game of wits."
     y "You must outsmart your opponent in the blink of an eye and leave them in the dust."
@@ -195,117 +206,13 @@ label Doom2:
     pause 2.0
     show natsuki scream at i43 zorder 4
     n  "OH GOD IT'S JUST FUCKING FAMILY FUED!!!"
-    y 3p "..."
-    y "Family... What?"
-    d "Yuri I think you and Natsuki have been scammed."
-    s 2o "Seriously guys... You didn't pay this, what was it, Conky Crinkler, person any money did you?"
-    y 1q "Well of course, he must be compensated for his training in some way."
-    "Oh Jesus."
-    "Oh no."
-    "Sayori looks like shes about to cry for them just because of how oblivious Yuri is."
-    n "YURI!!"
-    n "WE DONE FUCKED IT UP YURI!!!"
-    n "WE FUCKED IT OH GOD YURI YOU PAYED HIM SO MUCH MONEY I'M SO SORRY!!"
-    y 2p "But..."
-    "Yuri seems like she's about to fall over."
-    "Her whole world has been shattered."
-    "God..."
-    "This is horrible."
-    s 1y "Yuri it's ok, this kind of thing happens."
-    "Sayori embraces Yuri in a deep hug."
-    s "It's ok."
-    "Yuri begins to cry."
-    y 1n "W-what w-ww-was I th-th-thinking..."
-    y "*sniff*"
-    y "Oh g-g-god..."
-    y "aaaaah"
-    y "How could I-I not s-s-see it."
-    s "It's ok Yuri."
-    "Sayori strokes Yuri's hair with a tender hand."
-    "Natsuki seems to be taking it in a bit of a different way though."
-    n "FUCK!!"
-    "She's practically bouncing off the walls with anxiety."
-    n "OH GOD I ENCOURAGED HER OH MY GOD I'M HORRIBLE OH GOD!"
-    d "NATSUKI!!"
-    "That gets her to stop for a second."
-    show natsuki 3f at i43 zorder 4
-    d "It's not your fault."
-    d "Calm down."
-    d "It's ok."
-    "Sayori gestures towards the door and starts to move Yuri out of the room."
-    s "I'm gonna go with her, we'll be back soon."
-    hide sayori
-    hide yuri
-    show natsuki 3f at l21 zorder 4
-    show doomguy 1a at l22 zorder 4
-    "Now it's just me and Natsuki."
-    "She's breathing heavily, obviously stressed and worried."
-    "All the worst emotions a person can experience hitting her at once."
-    n 1f "Hnnaaa fu--"
-    d "It's ok Natsuki, we'll get this mother fucker somehow."
-    n 1p "But, I encouraged her to do all of it, I'm the one who introduced them."
-    n "It's all my fault oh god."
-    n "She'll never forgive me oh go-"
-    "I grab her before she can finish."
-    d "Stop."
-    d "It's not your fault."
-    d "Yes you got scammed, you may have even been the vessel for it."
-    d "But it's ok, Natsuki."
-    d "We all make mistakes."
-    d "Sometimes it's right in front of our eyes and we can't even see it."
-    d "The promise it gives us is so blindingly beautiful that we can't see past it."
-    d "It's ok."
-    d "Yuri will forgive you."
-    n 1x "No she won't."
-    d "Yes she will."
-    d "You both fell for it, you're both in it together."
-    d "Together we can all get through this."
-    d "Me and Sayori are here for you."
-    d "And Yuri will be here for you, and you {i}will{/i} be there for her."
-    "Natsuki wipes at her nose, she'd began to cry a little."
-    n 1i "Ok..."
-    n "{i}sniff{/i}"
-    d "Also, doesn't that mean that Monika got scammed too?"
-    "Natsuki perks up at this."
-    n 2k "Oh yeah."
-    n 1m "But, Conky Crinkler is the one who told us that Monika is a genius at the game."
-    d "Oh god they're in league..."
-    n 1p "That would make sense..."
-    "Natsuki begins to really cry now."
-    n 12h "D-D-Doomguy... What aa-are we g-g-onna d-do?"
-    d "I don't know Natsuki, but we'll figure it out."
-    d "We're gonna get those fuckers."
-    n 12i "Th-thank you."
-    "Natsuki gived me a cautious hug."
-    "I wish I could take this armor off."
-    "It's course, rough, and it gets in the way of everything."
-    d "It's nothing."
-    "I hug her back."
-    "To the left, I hear the door slide open."
-    "I look over to see a now calmed Yuri and a motherly looking Sayori, still holding Yuri's shoulders."
-    show sayori 1t at t41 zorder 3
-    show yuri 1s at t42 zorder 3
-    show natsuki 12i at t43 zorder 3
-    show doomguy 1a at t44 zorder 3
-    "Natsuki runs over to Yuri and embraces her in a hug."
-    n 12f "I-I'm so s-s-sorry Yuri!!"
-    n "It's a-all my fault!"
-    "Yuri returns her embrace."
-    y "It's not all your fault, we we're both idiots."
-    "Yuri smiles into Natsuki's shoulder."
-    y "It's ok Natsuki."
-    "Natsuki cries even harder into Yuri's shoulder."
-    n "I'm still s-sorry.."
-    y "It's ok."
-    "They embrace for a long time."
-    hide doomguy
-    hide natsuki
-    hide sayori
-    hide yuri
-    stop music fadeout 2.0
-    scene black
-    with dissolve_scene_full
+    y "What's family fued?"
+    n "YURI YOU FUCKING IDOT IT'S THE STEVE GAME!"
 
-    call Doom3
+    show steve zorder 5 at i11
+    $ r_name = "Steve Harvey"
+    r "Hey y'all I'm Steve Harvey.{w=1.82}{nw}"
+    hide steve
 
-    return
+    n "..."
+
